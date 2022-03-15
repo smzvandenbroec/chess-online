@@ -14,7 +14,7 @@ You can now join the game at localhost:3000.
 Enjoy!
 
 ## Known bugs
-Complex chess moves don't work e.g. pawn promotion, tower king swap
-
+ - Complex chess moves don't work e.g. pawn promotion, tower king swap
+ - It is just.. not pretty
 ## Credits
 Senne Van den Broeck
