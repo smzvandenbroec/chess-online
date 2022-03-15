@@ -6,8 +6,8 @@ An online Chess game made for the course Web & Database of the TU Delft CSE prog
 To play, you can either host it locally or join http://chess-on.herokuapp.com/ where is is hosted.
 
 To host locally, open a terminal in the current folder and run the following commands:
-'npm install'
-'npm start'
+ - 'npm install'
+ - 'npm start'
 
 You can now join the game at localhost:3000.
 
