@@ -1,0 +1,74 @@
+/* Check screen size */
+@media only screen and (max-width: 1000px) {
+  #error {
+      visibility:visible !important;
+      position: absolute;
+      background-color:rgb(211, 39, 39);
+      font-size: 10vmin;
+      color:rgb(0, 0, 0);
+      z-index: 3;
+      border: 5px solid black;
+      animation: blink 3s ease infinite;
+      top:25%;
+      bottom:25%;
+      left:25%;
+      right:25%;
+  }
+}
+#error {
+  visibility:hidden;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+   
+  :root {
+    --backGround: linear-gradient(to right,rgb(73, 71, 71),rgb(161, 161, 161),rgb(73, 71, 71));
+    --fontColour: black;
+  }
+  
+  body {
+    padding-left: 25px;
+    font: 14px "Cooper Black";
+    background: var(--backGround);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    user-select: none;
+  }
+
+    #title {
+      font-size: 60px;
+      color: var(--fontColour); 
+      position: fixed;
+  }
+
+  #utilityButtons {
+    z-index: 1;
+    position: fixed;
+    float:right;
+    top: 20px;
+    right: 20px;
+  }
+
+  #utilityButtons > *{
+      font: 30px "Cooper Black";
+      outline: none;
+      color: var(--fontColour);
+      border-color:black;
+      border-radius: 50%;
+      float:left;
+      margin-left: 1vmin;
+  }
+    
+  #utilityButtons > *:hover{
+    box-shadow: 0 0 0 3px black;
+  }
+  
+  #helpButton:hover {
+    cursor:help;
+  }
+  
+  

@@ -1,0 +1,11 @@
+.tile:hover {
+    transition: 0.5s ease;
+    box-shadow: -10px 10px 10px rgba(0,0,0,0.5);
+    z-index:+1;
+    transform: translate(7px, -7px);
+}
+
+.tile:active {
+    transition: 0s ;
+    background-color: rgb(73, 73, 73);
+}

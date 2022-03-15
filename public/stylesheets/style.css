@@ -1,0 +1,47 @@
+#joinForm > *{
+  /* vertical-align: top; */
+  font: 30px "Cooper Black";
+  outline: none;
+  color: var(--fontColour);
+  
+  border-color: black;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px black;
+  border-radius: 75px;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+
+#playerName {
+  position: relative;
+  top: -40px;
+}
+
+#joinButton {
+  position: absolute;
+  top: 20px;
+}
+
+#joinForm > *:focus {
+  box-shadow: 0 0 0 3px black;
+}
+
+#joinButton:hover {
+  box-shadow: 0 0 0 3px black;
+}
+
+#joinForm {
+  position: relative;
+  top: 20vmin;
+  left: 1vmin;
+}
+
+#stats {
+  font-size: 30px;
+  position: relative;
+  top: 10vmin;
+  right: 60vmin;
+  float:right;
+}
+
+

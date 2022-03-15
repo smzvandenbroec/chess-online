@@ -1,0 +1,16 @@
+hr {
+    height: 1px;
+    background:linear-gradient(to right,black,whitesmoke,black);
+    border: none;
+    animation: expand 4s;
+    margin:0;
+  }
+
+@keyframes expand {
+    from {
+        transform: scalex(0);
+    }
+    to {
+        transform: scalex(1);
+    }
+}

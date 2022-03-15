@@ -1,0 +1,77 @@
+/* Make html start at start of page */
+body {
+    margin: 20px !important;
+    padding: 0 !important;
+}
+
+/* Gameboard section */
+#gameBoard {
+    display: grid;
+    grid-template-rows: repeat(9, 75px);
+    grid-template-columns: 75px 600px;
+    grid-row-gap: 6px;
+    position: relative;
+    justify-content: center;
+    top:-10vmin;
+}
+
+/* Number column */
+.numbersOfRows {
+    grid-row:2;
+    display: grid;
+    grid-template-rows: repeat(9, 75px);
+    grid-column: 1;
+    grid-row-gap: 6px;
+    font-size: 40px;
+}
+
+/* Individual numbers */
+.number {
+    display: flex;
+    align-items: center;
+}
+
+/* Letters above board */
+.letters {
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(8, 75px);
+    grid-template-rows: 75px;
+    grid-column-gap: 6px;
+    font-size: 40px;
+
+    justify-content: center;
+    align-content: center;
+}
+
+/* Individual letter */
+.letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gameboard row */
+.row {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(8, 75px);
+    grid-column-gap: 6px;
+    justify-content: center;
+    align-content: center;
+}
+
+.tile {
+    background-color: whitesmoke;
+    width: 75px;
+    height: 75px;
+    font-size: 75px;
+    border:3px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.black {
+    background-color: rgb(94, 90, 90);
+}

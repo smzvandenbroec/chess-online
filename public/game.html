@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChessOnline</title>
+    <link rel='stylesheet' href='stylesheets\mainStyle.css'> 
+    <link rel="stylesheet" href="stylesheets\boardStyle.css">
+    <link rel='stylesheet' href='stylesheets\gameAnimations.css'>
+    <link rel='stylesheet' href='stylesheets\mainAnimations.css'>
+    <link rel='stylesheet' href='stylesheets\game.css'>
+
+  </head>
+  <body>
+    <main>
+      <section id="title">
+        <text>ChessOnline<hr /><br></text>
+      </section>
+
+      <section id="utilityButtons">
+        <button type="mute" id="muteButton">Unmute</button>
+        <button type="help" id="helpButton">Help</button>
+        <button type="close" id="closeButton" onclick='location.href="/"'>Close</button>
+      </section>
+
+      <section id="status">
+        Waiting for another player...
+      </section>
+
+      <section id="leftBoard">
+
+        <text id="playerOne">
+          White:<br>
+          <text class="name 1">*Waiting*</text>
+          <br>
+        </text>
+
+        <text id="playerTwo">
+          Black:<br>
+          <text class="name 2">*Waiting*</text>
+        </text>
+        
+      </section>
+ 
+
+      <section id="gameBoard">
+        <!--Board image should be loaded here together with pieces-->
+        
+
+        <div class="numbersOfRows">
+          <div class="number">8</div>
+          <div class="number">7</div>
+          <div class="number">6</div>
+          <div class="number">5</div>
+          <div class="number">4</div>
+          <div class="number">3</div>
+          <div class="number">2</div>
+          <div class="number">1</div>
+        </div>
+
+        <div class="letters">
+          <div class="letter">a</div>
+          <div class="letter">b</div>
+          <div class="letter">c</div>
+          <div class="letter">d</div>
+          <div class="letter">e</div>
+          <div class="letter">f</div>
+          <div class="letter">g</div>
+          <div class="letter">h</div>
+      </div>
+
+        <div class="row 8">
+          <div class="tile black" id="a8">&#9820;</div>
+          <div class="tile" id="b8">&#9822;</div>
+          <div class="tile black" id="c8">&#9821;</div>
+          <div class="tile" id="d8">&#9819;</div>
+          <div class="tile black" id="e8">&#9818;</div>
+          <div class="tile" id="f8">&#9821;</div>
+          <div class="tile black" id="g8">&#9822;</div>
+          <div class="tile" id="h8">&#9820;</div>
+        </div>
+        
+        <div class="row 7">
+          <div class="tile" id="a7">&#9823;</div>
+          <div class="tile black" id="b7">&#9823;</div>
+          <div class="tile" id="c7">&#9823;</div>
+          <div class="tile black" id="d7">&#9823;</div>
+          <div class="tile" id="e7">&#9823;</div>
+          <div class="tile black" id="f7">&#9823;</div>
+          <div class="tile" id="g7">&#9823;</div>
+          <div class="tile black" id="h7">&#9823;</div>
+        </div>
+        
+        <div class="row 6">
+          <div class="tile black" id="a6"></div>
+          <div class="tile" id="b6"></div>
+          <div class="tile black" id="c6"></div>
+          <div class="tile" id="d6"></div>
+          <div class="tile black" id="e6"></div>
+          <div class="tile" id="f6"></div>
+          <div class="tile black" id="g6"></div>
+          <div class="tile" id="h6"></div>
+        </div>
+        
+        <div class="row 5">
+          <div class="tile" id="a5"></div>
+          <div class="tile black" id="b5"></div>
+          <div class="tile" id="c5"></div>
+          <div class="tile black" id="d5"></div>
+          <div class="tile" id="e5"></div>
+          <div class="tile black" id="f5"></div>
+          <div class="tile" id="g5"></div>
+          <div class="tile black" id="h5"></div>
+        </div>
+
+        <div class="row 4">
+          <div class="tile black" id="a4"></div>
+          <div class="tile" id="b4"></div>
+          <div class="tile black" id="c4"></div>
+          <div class="tile" id="d4"></div>
+          <div class="tile black" id="e4"></div>
+          <div class="tile" id="f4"></div>
+          <div class="tile black" id="g4"></div>
+          <div class="tile" id="h4"></div>
+        </div>
+        
+        <div class="row 3">
+          <div class="tile" id="a3"></div>
+          <div class="tile black" id="b3"></div>
+          <div class="tile" id="c3"></div>
+          <div class="tile black" id="d3"></div>
+          <div class="tile" id="e3"></div>
+          <div class="tile black" id="f3"></div>
+          <div class="tile" id="g3"></div>
+          <div class="tile black" id="h3"></div>
+        </div>
+
+        <div class="row 2">
+          <div class="tile black" id="a2">&#9817;</div>
+          <div class="tile" id="b2">&#9817;</div>
+          <div class="tile black" id="c2">&#9817;</div>
+          <div class="tile" id="d2">&#9817;</div>
+          <div class="tile black" id="e2">&#9817;</div>
+          <div class="tile" id="f2">&#9817;</div>
+          <div class="tile black" id="g2">&#9817;</div>
+          <div class="tile" id="h2">&#9817;</div>
+        </div>
+        
+        <div class="row 1">
+          <div class="tile" id="a1">&#9814;</div>
+          <div class="tile black" id="b1">&#9816;</div>
+          <div class="tile" id="c1">&#9815;</div>
+          <div class="tile black" id="d1">&#9813;</div>
+          <div class="tile" id="e1">&#9812;</div>
+          <div class="tile black" id="f1">&#9815;</div>
+          <div class="tile" id="g1">&#9816;</div>
+          <div class="tile black" id="h1">&#9814;</div>
+        </div>
+
+      </section>
+
+      <section id="rightBoard">
+        Game timer: <br />
+        <div id="gameTimer">
+          0:0
+        </div>
+        Move timer: <br />
+        <div id="moveTimer">
+          0:0
+        </div>
+        
+        <div id="lastMove">
+          Last move: *none*<br>
+        </div>
+
+        <text>
+          Captured pieces:<br />
+          <div id="capturedPieces">
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+            <div class="captured"></div>
+          </div>
+      </text>
+
+      </section>
+
+      <script src='javascripts\packageWrapper.js'></script>
+      <script src='javascripts\clientCommunication.js'></script>
+      <script src='javascripts\buttonFunctionality.js'></script>
+      
+    </main>
+  </body>
+</html>

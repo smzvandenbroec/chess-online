@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChessOnline</title>
+    <link rel='stylesheet' href='stylesheets\mainStyle.css'>
+    <link rel='stylesheet' href='stylesheets\style.css'>
+    <link rel='stylesheet' href='stylesheets\mainAnimations.css'>
+  </head>
+  
+  <body>
+    <main>
+
+      <div id="error">
+        Error: you need a larger screen!
+      </div>
+
+      <section id="title">
+        <text>ChessOnline<hr /><br></text>
+      </section>
+
+      <section id="utilityButtons">
+        <button type="mute" id="muteButton">Unmute</button>
+        <button type="help" id="helpButton">Help</button>
+      </section>
+
+      <section id="joinButtons">
+          <div id='joinForm' >
+            <input autocomplete="off" type="text" id="playerName" value='Enter name here'><br />
+            <button id="joinButton">Join game</button>
+          </div>
+      </section>
+
+      <section id="stats">
+            <%= gamesInitialized %> 
+            <%if (gamesInitialized != 1) { %>
+                games have
+            <% } else { %>
+                game has
+            <% } %>
+                 started
+            <br>
+            
+            
+            <%= playersConnected %> 
+            <%if (playersConnected != 1) { %>
+                players are
+            <% } else { %>
+                player is
+            <% } %>
+                connected
+            <br>
+
+            <%= playersWaiting %> 
+            <%if (playersWaiting != 1) { %>
+                players are
+            <% } else { %>
+                player is
+            <% } %>
+                waiting to start
+
+      </section>
+    
+      <section id="rightImage">
+          <!--Image should be loaded here-->
+      </section>
+
+      <script src='javascripts\buttonFunctionality.js'></script>
+      <script src='javascripts\mainMenu.js'></script>
+    </main>
+  </body>
+</html>

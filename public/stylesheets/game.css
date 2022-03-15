@@ -1,0 +1,48 @@
+
+/* Left section of the board */
+#leftBoard {
+    font-size: 30px;
+    position: relative;
+    top: 30vmin;
+    padding-left:20vmin;
+}
+
+/* Right section of the board */
+#rightBoard {
+    position: absolute;
+    font-size: 30px;
+    float:right;
+    top:34vmin;
+    right:10vmin;
+}
+
+/* Status message above board */
+#status {
+    position: relative;
+    font-size: 30px;
+    top: 2vmin;
+    display:flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+/* "|" before and after timer */
+#moveTimer::before, #gameTimer::before, #moveTimer::after, #gameTimer::after{
+    content: "|";
+    color:rgb(53, 50, 50);
+}
+
+/* Container captured pieces */
+#capturedPieces {
+    max-width: 30vmin;
+}
+
+/* Captured pieces */
+.captured {
+    font-size: 50px;
+    float: left;
+}
+
+.name {
+    color: rgb(255, 255, 255);
+}
